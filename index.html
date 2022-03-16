@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="left">
+        <a href="./index.html" style="color: black; text-decoration: none"
+          ><p style="margin: 0; font-weight: bold; font-size: 26px">
+            <i class="fa-solid fa-bars" style="margin-right: 20px"></i>
+            <i class="fa-brands fa-youtube fa-1x" style="color: red"></i>YouTube
+          </p></a
+        >
+      </div>
+
+      <div id="mid">
+        <div id="searchDiv">
+          <input type="text" id="search" placeholder="    Search..." />
+          <button onclick="searchVideo()">
+            <i class="fa-thin fa-magnifying-glass y fa-2x"></i>
+          </button>
+          <i class="fa-solid fa-microphone fa-1x"></i>
+        </div>
+      </div>
+
+      <div id="right">
+        <div style="margin-top:15px; padding:8px; display: flex; justify-content:center;align-items:center;">
+          
+          <a href="">
+            <i class="fa-solid fa-grip-dots fa-2x" style="margin-right:30px ;"></i>
+            </a>
+            <a href=""><i class="fa-solid fa-ellipsis-vertical fa-2x" style="margin-left:30px ;"></i></a>
+            <div>
+              <a href=""><span style="margin-left:60px;">SIGN IN</span></a></div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- navbar ends here-->
+
+    <!--  -->
+    <div id="container">
+      <div id="left-side"></div>
+      <div id="right-side">
+        <div id="searchResults"></div>
+      </div>
+    </div>
+  </body>
+
+  <!-- GET https://www.googleapis.com/youtube/v3/search?part=snippet&q= -->
+
+  <!-- AIzaSyDNPg6ZHatmypgpHcpvJ2I34dPvgpKZsHc -->
+
+  <!-- embed-url   https://www.youtube.com/embed/TU0xUG9eO3Y -->
+</html>
+<script src="./script/index.js"></script>

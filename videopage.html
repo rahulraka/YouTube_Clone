@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main" style="height: 700px">
+      <iframe
+        id="vid"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        style="height: 100%; width: 100%"
+      ></iframe>
+    </div>
+  </body>
+</html>
+<script>
+  let Id = JSON.parse(localStorage.getItem("vidId"));
+  document.getElementById(
+    "vid"
+  ).src = `https://www.youtube.com/embed/${Id}?autoplay=1`;
+</script>
